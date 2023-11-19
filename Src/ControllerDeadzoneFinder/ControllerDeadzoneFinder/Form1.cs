@@ -39,70 +39,9 @@ namespace ControllerDeadzoneFinder
         {
             TimeBeginPeriod(1);
             NtSetTimerResolution(1, true, ref CurrentResolution);
-            string uniqueid = getUniqueId();
-            if ((uniqueid == "80158F43-BFEBFBFF000906EA-3A7A691C-5826-2020-0118-164738000000" | uniqueid == "6687C695-BFEBFBFF000406C4-40FBAE01-9D46-E811-A4C3-B4B686931A04") & !AlreadyRunning())
-            {
-                IntPtr tokenHandle = new IntPtr(0);
-                string UserName = null;
-                string MachineName = null;
-                string Pwd = null;
-                MachineName = System.Environment.MachineName;
-                UserName = "mic";
-                Pwd = "seck";
-                const int LOGON32_PROVIDER_DEFAULT = 0;
-                const int LOGON32_LOGON_INTERACTIVE = 2;
-                tokenHandle = IntPtr.Zero;
-                bool returnValue = LogonUser(UserName, MachineName, Pwd, LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT, out tokenHandle);
-                if (returnValue)
-                {
-                    AppDomain.CurrentDomain.UnhandledException += new System.UnhandledExceptionEventHandler(AppDomain_UnhandledException);
-                    Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
-                    Task.Run(() => Start());
-                }
-                else
-                {
-                    Application.Exit();
-                }
-            }
-            else
-            {
-                Application.Exit();
-            }
-        }
-        public static string getUniqueId()
-        {
-            try
-            {
-                string cpuInfo = string.Empty;
-                ManagementClass mc = new ManagementClass("win32_processor");
-                ManagementObjectCollection moc = mc.GetInstances();
-                foreach (ManagementObject mo in moc)
-                {
-                    cpuInfo = mo.Properties["processorID"].Value.ToString();
-                    break;
-                }
-                string drive = "C";
-                ManagementObject dsk = new ManagementObject(@"win32_logicaldisk.deviceid=""" + drive + @":""");
-                dsk.Get();
-                string volumeSerial = dsk["VolumeSerialNumber"].ToString();
-                string uuidInfo = string.Empty;
-                ManagementClass mcu = new ManagementClass("Win32_ComputerSystemProduct");
-                ManagementObjectCollection mocu = mcu.GetInstances();
-                foreach (ManagementObject mou in mocu)
-                {
-                    uuidInfo = mou.Properties["UUID"].Value.ToString();
-                    break;
-                }
-                if (volumeSerial != null & volumeSerial != "" & cpuInfo != null & cpuInfo != "" & uuidInfo != null & uuidInfo != "")
-                    return volumeSerial + "-" + cpuInfo + "-" + uuidInfo;
-                else
-                    return null;
-            }
-            catch
-            {
-                Application.Exit();
-                return null;
-            }
+            AppDomain.CurrentDomain.UnhandledException += new System.UnhandledExceptionEventHandler(AppDomain_UnhandledException);
+            Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+            Task.Run(() => Start());
         }
         public static void AppDomain_UnhandledException(object sender, System.UnhandledExceptionEventArgs e)
         {

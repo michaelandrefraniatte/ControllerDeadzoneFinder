@@ -21,3 +21,14 @@ C:\Users\mic\Documents\GitHub\ControllerDeadzoneFinder\Src\ControllerDeadzoneFin
 C:\Users\mic\Documents\GitHub\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.csproj.CoreCompileInputs.cache
 C:\Users\mic\Documents\GitHub\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.exe
 C:\Users\mic\Documents\GitHub\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.pdb
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\bin\Release\ControllerDeadzoneFinder.exe.config
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\bin\Release\ControllerDeadzoneFinder.exe
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\bin\Release\ControllerDeadzoneFinder.pdb
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.Form1.resources
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.Properties.Resources.resources
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.exe
+C:\Users\micha\Documents\github\ControllerDeadzoneFinder\Src\ControllerDeadzoneFinder\ControllerDeadzoneFinder\obj\Release\ControllerDeadzoneFinder.pdb
